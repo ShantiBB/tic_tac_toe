@@ -1,5 +1,13 @@
-from parts import Board
+from partsgame import Board
 
-game = Board()  # Объект, который создает игровое поле
-game.display()  # Отрисовка игрового поля
 
+def main():
+    game = Board()  # Объект, который создает игровое поле
+    game.display()
+    game.make_move(1, 1, 'X')
+    print('Ход сделан!')
+    game.display()
+
+
+if __name__ == '__main__':
+    main()
